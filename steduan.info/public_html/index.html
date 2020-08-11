@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <!--Bootstrap 4 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" >
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+  <title>CSE 135 HW Lives!</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <div class="container">
+        <div class="row row-header">
+            <div class="col-12 col-sm-7">
+                <h1>CSE 135</h1>
+                <h2>Summer 2020</h2>
+            </div>
+            <div class="col-12 col-sm-5">
+              <div class="card">
+                <h3 class="card-header text-white">Team X</h3>
+                <div class="card-body">
+                    <p>A group of passionate CS students who always strive to make a positive impact on the world!</p>
+                    <strong>Team Members</strong>
+                    <ul>
+                      <li>Sicong Duan</li>
+                      <li>Shinuo Xu</li>
+                      <li>Ouyang Duolan</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+  <div class="row row-content">
+    <div class="col-12 col-sm-4">
+      <h4>Homework 1</h4>
+      <strong>Client Side Basics, Site and Server Configuration</strong>
+    </div>
+    <div class="col-12 col-sm-8">
+      <ul>
+	      <li><a href="/robots.txt">robots.txt</a></li>
+	      <li><a href="/html/hw1/hello.php">hello.php</a></li>
+	      <li><a href="html/hw1/report.html">report.html</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row row-content">
+    <div class="col-12 col-sm-4">
+      <h4>Homework 2</h4>
+      <strong>Server-Side Basics Done 3 ways</strong>
+    </div>
+    <div class="col-12 col-sm-8">
+      <ul>
+        <li>PHP</li>
+        <li>Node</li>
+        <li>Analytics</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <h2>
+    <script>
+      var hostName = window.location.hostname;
+      if(hostName !== "steduan.info"){
+        document.write(window.location.hostname);
+      }
+    </script>
+  </h2>
+  <script>
+    document.write(`Live @ ${new Date()}`);
+  </script>
+
+</body>
+
+</html>

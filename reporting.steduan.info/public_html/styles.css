@@ -1,0 +1,21 @@
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: #a0d2eb;
+  color: floralwhite; }
+
+.card-header{
+    background-color: #00DDFF;
+}
+
+.card-body {
+    color: black;
+}
+
+.container {
+    margin-top: 15px;
+}
+
+.row {
+    margin-top: 10px;
+}
