@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shinuo's main Page</title>
+    <link rel="stylesheet" href="shinuo.css" />
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div>
+        <img
+          id="avatar"
+          src="Shinuo.jpg"
+          alt="my avatar"
+          width="400"
+          height="400"
+        />
+      </div>
+      <div>
+        <h1><span id="datetime"></span> &nbsp;I am Shinuo(Irena) Xu.</h1>
+      </div>
+      <div>
+        <h2>
+          I am a sophomore student at UCSD. Currently, I am actively looking for
+          an internship in 2021 summer.
+        </h2>
+      </div>
+      <div>
+        <h1>Nice to meet you:))</h1>
+      </div>
+    </div>
+
+    <script>
+      var time = new Date().toString();
+      var time_seperate = time.split(" ");
+      var t1 = time_seperate[4];
+      var t2 = t1.split(":")[0];
+
+      if (t2 >= 4 && t2 <= 11) {
+        document.getElementById("datetime").innerHTML = "Good morning!";
+      }
+      if (t2 >= 12 && t2 <= 17) {
+        document.getElementById("datetime").innerHTML = "Good afternoon!";
+      }
+      if ((t2 >= 18 && t2 <= 24) || (t2 >= 0 && t2 <= 3)) {
+        document.getElementById("datetime").innerHTML = "Good evening!";
+      }
+    </script>
+  </body>
+</html>

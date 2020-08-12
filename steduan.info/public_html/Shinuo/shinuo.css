@@ -1,0 +1,10 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#avatar {
+  border-radius: 50%;
+  transform: rotate(-15deg);
+}
