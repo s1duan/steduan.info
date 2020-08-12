@@ -1,0 +1,144 @@
+:root {
+    --highlight-color: #F29E4C;
+    --background-color: #121212;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--background-color);
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    font-family: 'Play', serif;
+    position: fixed;
+    margin-top: 0;
+    width: 100vw;
+    height: 80px;
+    background: var(--background-color);
+    color: aliceblue;
+}
+
+#name-logo {
+    font-size: 1.6em;
+    font-weight: bolder;
+    float: left;
+    padding-left: 20px;
+    margin: 10px;
+}
+
+#nav-bar {
+    float: right;
+    margin: 0px 20px;
+    padding: 5px;
+    font-size: 26px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px;
+    color: aliceblue;
+}
+
+#nav-bar a:not(#blog-tag)::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--highlight-color);
+    transition: width .3s;
+}
+
+#nav-bar a:not(#blog-tag):hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+#blog-tag::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--highlight-color);
+}
+
+#headline {
+    margin: 200px auto 120px auto;
+    color: #e0e0e0;
+    width: 80%;
+}
+
+#head-title {
+    font-size: 5em;
+    font-weight: 600;
+}
+
+#head-paragraph {
+    width: 70%;
+    font-size: 1.8em;
+    font-weight: 300;
+}
+
+#posts-region {
+    color: #e0e0e0;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.post {
+    width: 400px;
+    height: auto;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.img-frame {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.post-image {
+    max-width: 100%;
+    height: 300px;
+    transition: 0.5s all ease-in-out;
+}
+
+.post-image:hover {
+    transform: scale(1.2);
+}
+
+.post-tag {
+    color: var(--highlight-color)
+}
+
+.post-title {
+    /* background-color: aqua; */
+    margin-bottom: 10px;
+}
+
+.post-time {
+    margin-top: 10px;
+    font-weight: 200;
+}
+
+footer {
+    height: 100px;
+    background-color: #1c1c1c;
+    color: #FBF9F5;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-family: 'Play', serif;
+    margin-top: 100px;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duolan's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Muli:wght@300&family=Noto+Sans+JP&family=Open+Sans&family=Play&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h2 id="name-logo">Duolan Ouyang</h2>
+        <nav id="nav-bar">
+            <a id="nav-resume" onclick="javascipt:window.open('img/resume.pdf');">Resume</a>
+            <a href="#about-me" id="nav-about" class="nav-active">About</a>
+            <a href="#skills" id="nav-skills">Skills</a>
+            <a href="#experience" id="nav-experience">Experience</a>
+            <a href="#projects" id="nav-projects">Projects</a>
+            <a href="#contact" id="nav-contact">Contact</a>
+            <a href="blog.html" id="nav-blog">Blog</a>
+        </nav>
+    </header>
+    <div class="content-intro" id="about-me">
+        <picture class="img-wrapper" id="duolan-img-wrapper">
+            <source media="(min-width: 900px)" srcset="img/white_logo_transparent_background.png">
+            <img src="img/white_logo_transparent_background.png" alt="profile background" style="width: 50vw">
+        </picture>
+
+        <div class="text">
+            <h1 class="typewriter" style="width: 12em;">Yo, this is Duolan</h1>
+            <p>My name is Duolan Ouyang, and I am a second year Computer Science student at <a href="https://ucsd.edu/">UC San Diego</a>. I am passionate about software developing and machine learning, and my favorite is to build application using machine
+                learning knowledge.</p>
+            <p>Besides web development, I am a big fan of Data Science. I am currently working in a BioInformatics Lab as research assistant, and the main project now is analyzing the role of genetics in early brain development.
+            </p>
+            <p>In the past year, I have been working as academic tutor for <a href="https://cse.ucsd.edu/">UCSD Computer Science Department</a> and <a href="http://www.cogsci.ucsd.edu/">UCSD Cognitive Science Department</a>. I have tutored CSE 8B - Introduction
+                to Java and COGS 18 - Introduction to Python. The class I am tutoring now is <a>CSE11 Summer 2020</a>.</p>
+        </div>
+    </div>
+    <div class="content" id="skills">
+        <h1>Skills</h1>
+        <ul>
+            <li><span>Programming Language: </span> Java, Python, C/C++, HTML/CSS/JavaScript, MatLab, Haskell</li>
+            <li><span>Technology: </span>Firebase, React, MySQL, PyTorch</li>
+            <li><span>Tools: </span>Unix, Git, Vim, gcd</li>
+        </ul>
+    </div>
+
+    <div class="content" id="experience">
+        <h1>Experience</h1>
+        <section class="job-experience">
+            <h3><span class="title">Machine Learning Engineer Intern </span><span class="company">Add-Care Limited (Shenzhen, China)</span><span class="date">2020.6 - Present</span></h3>
+            <div class="job-experience-content">
+                <p>Currently, I am working remotely with Add-Care Limited as a Machine Learning Engineer Intern. I work on the Motion Detection team and AWS Algorithm team for wearable glucose monitor device.</p>
+                <p>My current job is to analyze and train Deep Learnign models based on the data detect by the watch, including recover PPG waveform, classify sleeping stages and so on.</p>
+            </div>
+        </section>
+        <section class="job-experience">
+            <h3><span class="title">Research Scientist </span><span class="company">LaunchIt Inc. (San Diego, CA)</span><span class="date">2020.4 - Present</span></h3>
+            <div class="job-experience-content">
+                <p>LaunchIt is a web-based platform that connects fast-growing projects with other brilliant minds that thinks alike. Through a streamlined experience, project owners of all types can broadcast ideas, plan and progress to a wide audience
+                    most relevant to their needs.</p>
+                <p>I work in the Research team to insure user experience by research approach. Our team now focuses on building a recommandation system pipeline, which will extract user info from resume and match them to fit jobs.</p>
+            </div>
+        </section>
+        <section class="job-experience">
+            <h3><span class="title">Academic Tutor </span><span class="company">UC San Diego Computer Science Department (San Diego, CA)</span><span class="date">2019.9 - Present</span></h3>
+            <div class="job-experience-content">
+                <p>I have been tutoring programming intro-level course for a year. My main job is helping students debug and write test cases for programming assignments. The class I have tutored are:
+                </p>
+                <ul>
+                    <li>Summer 2020: CSE 11 - Introduction to Java with Professor. Greg Miranda</li>
+                    <li>Spring 2020: CSE 8B - Introduction to Java (II) with Professor. Adalbert Gerald Soosai Raj</li>
+                    <li>Winter 2020: CSE 8B - Introduction to Java (II) with Professor. Adalbert Gerald Soosai Raj</li>
+                    <li>Fall 2019: COGS 18 - Introduction to Python with Professor. Shannon Ellis</li>
+                </ul>
+                The one-year tutoring experience gives me a chance to practice my communication and team collaboration skills.
+            </div>
+        </section>
+
+        <div class="job-experience">
+            <h3><span class="title">Frontend Engineer  </span><span class="company">  iSoftStone (Nanjing, China)</span><span class="date">2019.8 - 2019.9</span></h3>
+            <div class="job-experience-content">
+                <p>Last summer, I had an internship at iSoftStone (Nanjing, China) as a fontend engineer. <a href="https://www.isoftstoneinc.com/">iSoftStone</a> is the third largest software outsourcing company in China. There, my collegue and I developed
+                    a micro Service system by using Spring Boot Framework. I contributed the user interface by using an amazing framework layui. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="projects">
+        <h1 style="margin-top: 150px;">Projects</h1>
+        <section class="project" id="project-intellikitchen">
+            <img class="project-img" src="img/intellikitchen.jpg" alt="IntelliKitchen User Interface Collection">
+            <div class="project-text">
+                <h2><a href="https://github.com/duouyang/CSE110_TEAMIK_IntelliKitchen">IntelliKitchen</a> - IOS App</h2>
+                <p>
+                    <span style="color: #e4ab72;">Technology used:</span> Swift, Firebase, Python, Adobe XD
+                </p>
+                <p>IntelliKitchen is an IOS Application that serves as an intelligent kitchen manager building by <span class="tech-skill">Swift</span>. It can track users food in the fridge and recommand recipes based on the food expiration date. It can
+                    also track users chores and set notification to remind users of doing chores. </p>
+            </div>
+        </section>
+        <section class="project" id="project-launchit">
+            <img class="project-img" src="img/launchit.jpg" alt="LaunchIt UI Collection">
+            <div class="project-text">
+                <h2><a href="http://www.launchitnow.org/posts">LaunchIt</a> - Web App</h2>
+                <p>
+                    <span style="color: #e4ab72;">Technology used:</span> JavaScript, React, Python
+                </p>
+                <p>LaunchIt is a web-based platform that connects fast-growing projects with other brilliant minds that thinks alike. Through a streamlined experience, project owners of all types can broadcast ideas, plan and progress to a wide audience
+                    most relevant to their needs. Users will be able to find exciting projects within seconds, with the potential ability to customize searches, follow accounts, and establish connection to projects in one-click.</p>
+            </div>
+        </section>
+        <section class="project" id="project-defnote">
+            <img class="project-img" src="img/defNote-pic.jpg" alt="DefNote Home Page">
+            <div class="project-text">
+                <h2><a href="https://devpost.com/software/defnote-w2ialt"> DefNote</a> - Web App</h2>
+                <p>
+                    <span style="color: #e4ab72;">Technology used:</span> JavaScript, HTML/CSS, Python
+                </p>
+                <p>DefNote can analyze your text and generate flashcards with vocab and definition automatically. When user inputs some text, our algorithm will first recognize all the terminologies that relates to the field of study user chose. Then, system
+                    will scrape the definition of the terms recognized by Wikipedia API. Finally, flashcards will be generated by <span class="tech-skill">JavaScript</span> and <span class="tech-skill">HTML</span>.</p>
+            </div>
+        </section>
+
+        <section class="project" id="project-recipe101">
+            <img class="project-img" src="img/recipe101.gif" alt="Recipe 101 Welcoming Page">
+            <div class="project-text">
+                <h2><a href="https://devpost.com/software/recipe101">Recipe 101</a> - Web App</h2>
+                <p>
+                    <span style="color: #e4ab72;">Technology used:</span> Node.js, JavaScript, MySQL, AWS, Python
+                </p>
+                <p>Recipe 101 can recommand recipes according to the ingredients users select. User can choose either to manually check ingredients, or upload a receipt from market. Our system used <span class="tech-skill">Node.js</span> and <span class="tech-skill">MySQL</span>                    as our backend platform and database. The project won the Health and Wellness track at SD Hacks 2019.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="content" id="contact">
+        <h1>Contact</h1>
+        <div style="display: flex; justify-content: space-evenly; width: 50vw;">
+            <ul>
+                <li><a href="https://github.com/duouyang"><span class="icon-social-github" id="github-icon"></span> duouyang</a></li>
+                <li> <a href="https://www.linkedin.com/in/duolan-ouyang-509012179/"><span class="icon-social-linkedin"></span> Duolan Ouyang</a></li>
+                <li> <a href="https://www.instagram.com/"><span class="icon-social-instagram"></span> ouyangduolan</a></li>
+            </ul>
+            <ul>
+                <li><span>Tel: </span>858-997-7497</li>
+                <li><span>Email: </span>duouyang@ucsd.edu</li>
+                <li><span>WeChat: </span>oydldwx</li>
+                <li><span>Address: </span>La Jolla, California</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>@Duolan Ouyang, Some rights reserved</p>
+    </footer>
+
+    <script>
+        let myNav = document.getElementById('nav-bar');
+        let skillsHead = window.pageYOffset + document.getElementById('skills').getBoundingClientRect().y;
+        let experienceHead = window.pageYOffset + document.getElementById('experience').getBoundingClientRect().y;
+        let projectsHead = window.pageYOffset + document.getElementById('projects').getBoundingClientRect().y;
+        let contactHead = window.pageYOffset + document.getElementById('contact').getBoundingClientRect().y;
+        let setOff = 0;
+        window.addEventListener('scroll', onScroll = () => {
+            if (window.scrollY <= skillsHead + setOff) {
+                setCurrentTab('nav-about');
+            } else if (window.scrollY > skillsHead + setOff && window.scrollY <= experienceHead + setOff) {
+                setCurrentTab('nav-skills');
+            } else if (window.scrollY > experienceHead + setOff && window.scrollY <= projectsHead + setOff) {
+                setCurrentTab('nav-experience');
+            } else if (window.scrollY > projectsHead + setOff && window.scrollY <= contactHead - 200) {
+                setCurrentTab('nav-projects');
+            } else {
+                setCurrentTab('nav-contact');
+            }
+        });
+
+        function setCurrentTab(navId) {
+            let myNav = document.getElementById('nav-bar');
+            let tabs = Array.from(myNav.children);
+            tabs.forEach(element => {
+                if (element.id == navId) {
+                    document.getElementById(navId).className = "nav-active";
+                } else {
+                    document.getElementById(element.id).className = "nav-inactive";
+                }
+
+            });
+        }
+    </script>
+</body>
+
+</html>

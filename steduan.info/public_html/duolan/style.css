@@ -1,0 +1,321 @@
+:root {
+    --highlight-color: #F29E4C;
+    --background-color: #111111;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--background-color);
+}
+
+header {
+    font-family: 'Play', serif;
+    position: fixed;
+    margin-top: 0;
+    width: 100vw;
+    height: 80px;
+    background: var(--background-color);
+    color: aliceblue;
+}
+
+#name-logo {
+    font-family: 'Play', serif;
+    font-size: 1.6em;
+    font-weight: bolder;
+    float: left;
+    padding-left: 20px;
+    margin: 10px;
+}
+
+#nav-bar {
+    float: right;
+    margin: 0px 20px;
+    padding: 5px;
+    font-size: 26px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px;
+    color: aliceblue;
+}
+
+#nav-bar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--highlight-color);
+    transition: width .3s;
+}
+
+#nav-bar a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.nav-active::after {
+    content: '' !important;
+    display: block !important;
+    width: 100% !important;
+    height: 2px !important;
+    background: var(--highlight-color) !important;
+    transition: width .2s !important;
+}
+
+#duolan-img-wrapper {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 50%;
+}
+
+.typewriter {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 0;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 2.5s steps(20, end), blink-caret 0.75s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 12em
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    30% {
+        border-color: orange;
+    }
+}
+
+.text {
+    display: block;
+    color: #FBF9F5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    width: 70%;
+    font-size: 1.5em;
+    /* font-family'; */
+    font-family: 'Play', serif;
+}
+
+p {
+    font-weight: lighter;
+    word-spacing: 0.1em;
+}
+
+p a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    clear: both;
+    display: block;
+    color: #FBF9F5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    width: 70%;
+    font-family: 'Play', serif;
+    font-size: 1.5em;
+}
+
+.content li {
+    margin-bottom: 10px;
+}
+
+li span {
+    color: var(--highlight-color);
+}
+
+#experience .company {
+    font-size: .8em;
+}
+
+#experience .title {
+    color: #F29E4C;
+    text-decoration: none;
+}
+
+#experience .date {
+    font-size: 0.7em;
+    margin-left: 30px;
+}
+
+.job-experience {
+    margin-bottom: 60px;
+}
+
+.job-experience-content {
+    padding-left: 5vw;
+}
+
+.project {
+    height: 500px;
+}
+
+.project a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+.project-img {
+    clear: both;
+    float: left;
+    width: 30vw;
+    height: 20vw;
+}
+
+.project-text {
+    float: left;
+    width: 30vw;
+    margin-top: -50px;
+    margin-left: 50px;
+}
+
+.tech-skill {
+    text-decoration: underline;
+}
+
+a:not(#contact a) {
+    text-decoration: none;
+    color: var(--highlight-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.project-text h2 {
+    color: #F29E4C;
+}
+
+#contact-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#contact li {
+    color: #FBF9F5 !important;
+    top: 0;
+    font-size: 25px;
+}
+
+#contact a {
+    color: #FBF9F5;
+    text-decoration: none;
+}
+
+#contact span {
+    color: var(--highlight-color);
+}
+
+#contact a:hover {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+.header a {
+    color: #FBF9F5;
+}
+
+.header a:hover {
+    color: #FBF9F5;
+    text-decoration: none;
+}
+
+footer {
+    height: 100px;
+    background-color: #1c1c1c;
+    color: #FBF9F5;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-family: 'Play', serif;
+}
+
+@media only screen and (max-width:1100px) {
+    body {
+        font-size: 13px;
+    }
+    header {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text {
+        width: 90%;
+    }
+    .typewriter {
+        font-size: 24px;
+    }
+    .content {
+        width: 90%;
+    }
+    #name-logo {
+        font-size: 28px;
+    }
+    #nav-bar {
+        font-size: 16px;
+        margin-top: -20px;
+        padding: 0 20px;
+    }
+    /* .project::before {
+        clear: both;
+    } */
+    .project {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        height: auto;
+        margin-bottom: 100px;
+    }
+    .project-img {
+        width: 70vw;
+        height: auto;
+    }
+    .project-text {
+        margin-top: 50px;
+        margin-left: 0;
+        width: 70vw;
+    }
+}
