@@ -8,7 +8,8 @@
 <body>
     <h1>Sicong Duan was here! </h1>
     <?php
-      echo "Hello World"
+      echo "Hello World" . "<br>";
+      echo "This program is generated at " . date("Y/m/d h:i:sa");
      ?>
     
 </body>
