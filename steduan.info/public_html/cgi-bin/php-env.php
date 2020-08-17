@@ -9,9 +9,9 @@
     <h1>Environment Variable </h1>
     <?php
 
-      foreach($_ENV as &$value) {
-        echo "<b>" . $value . ":</b> ";
-        //echo $_ENV[$value] . "<br>";
+      foreach(array_keys($_ENV) as &$key) {
+        echo "<b>" . $key . ":</b> ";
+        echo $_ENV[$key] . "<br>";
       }
      ?>
     
