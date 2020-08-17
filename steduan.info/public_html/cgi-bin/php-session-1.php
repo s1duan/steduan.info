@@ -32,6 +32,8 @@
      ?>
     <a href="/php-cgiform.html">Perl CGI Form</a><br />
     <a href="php-session-2.php">Session Page 2</a><br />
-    <button type="submit">Destroy Session</button>
+    <form style="margin-top:30px" action="/cgi-bin/php-destroy-session.php" method="get">
+        <button type="submit">Destroy Session</button>
+    </form>
 </body>
 </html>
