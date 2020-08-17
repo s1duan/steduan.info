@@ -4,7 +4,7 @@
 
     # create cookie from session id
     setcookie($session_ID);
-    if ($_SESSION['username']){
+    if ($_SESSION['username'] && !$_POST["username"]){
         $name = $_SESSION['username'];
     }
     else {
@@ -24,7 +24,7 @@
     <h1>Session 1</h1>
     <?php
       if(strlen($_SESSION["username"]) > 0){
-        echo "<b>name: </b><br>" . $_SESSION["username"];
+        echo "<b>name: </b>" . $_SESSION["username"] . "<br>";
       }
       else {
         echo "You didn't set a user name<br>";
