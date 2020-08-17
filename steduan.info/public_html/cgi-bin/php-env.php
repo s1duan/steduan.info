@@ -9,7 +9,7 @@
     <h1>Environment Variable </h1>
     <?php
       foreach($_ENV as &$value) {
-        echo $value . "<br>";
+        echo "hello" . $value . "<br>";
       }
      ?>
     
