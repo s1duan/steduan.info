@@ -11,7 +11,7 @@
 
       foreach($_ENV as &$value) {
         echo "<b>" . $value . ":</b> ";
-        echo $_ENV[$value] "<br>";
+        echo $_ENV[$value] . "<br>";
       }
      ?>
     
