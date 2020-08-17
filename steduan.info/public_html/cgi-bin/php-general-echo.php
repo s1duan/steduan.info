@@ -21,6 +21,7 @@
           }
           echo "</ul>";
       }
+      echo "<br>";
       echo "<b>Message body: </b><br>";
       foreach(array_keys($_POST) as $key) {
           echo "<li><b>$key:</b>" . $_POST[$key] . "</li>";
