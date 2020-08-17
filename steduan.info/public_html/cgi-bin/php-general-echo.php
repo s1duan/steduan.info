@@ -13,7 +13,14 @@
       $method = $_SERVER['REQUEST_METHOD'];
       echo "<b>Request Method: </b>" . $method . "<br>";
       echo "<b>Protocol: </b>" . $protocol . "<br>";
-      echo "<b>Query string:</b>" . $query . "<br>";
+      echo "<b>Query:</b>";
+      if (strlen($query) > 0){
+          echo "<ul>";
+          foreach(array_keys($_GET) as $key) {
+            echo "<li><b>$key:</b>" . $_GET[$key] . "</li>";
+          }
+          echo "</ul>";
+      }
       echo "<b>Message body: </b><br>";
       foreach(array_keys($_POST) as $key) {
           echo "<li><b>$key:</b>" . $_POST[$key] . "</li>";

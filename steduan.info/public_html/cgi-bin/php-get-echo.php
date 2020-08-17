@@ -11,11 +11,13 @@
       $query = $_SERVER['QUERY_STRING'];
       echo "<b>Query string:</b>" . $query;
     ?>
+    <ul>
     <?php
       foreach(array_keys($_GET) as $key) {
           echo "<li><b>$key:</b>" . $_GET[$key] . "</li>";
       }
      ?>
+     </ul>
     
 </body>
 </html>
