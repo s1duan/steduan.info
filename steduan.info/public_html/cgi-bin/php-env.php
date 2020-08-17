@@ -8,11 +8,10 @@
 <body>
     <h1>Environment Variable </h1>
     <?php
-      $ip = getenv('REMOTE_ADDR');
-      echo "using env" . $_ENV["REMORE_ADDR"];
-      echo "using getenv" . $ip;
+
       foreach($_ENV as &$value) {
-        echo "hello" . $value . "<br>";
+        echo "<b>" . $value . "<\b>: ";
+        echo $_ENV[$value];
       }
      ?>
     
