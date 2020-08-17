@@ -13,7 +13,7 @@
     ?>
     <?php
       foreach(array_keys($_GET) as $key) {
-          echo "<li><b>$key:</b>" . $GET[$key] . "</li>";
+          echo "<li><b>$key:</b>" . $_GET[$key] . "</li>";
       }
      ?>
     
