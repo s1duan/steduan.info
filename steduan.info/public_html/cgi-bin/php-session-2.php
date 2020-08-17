@@ -1,13 +1,6 @@
 <?php
-    session_start();
-    $session_ID = session_id();
-
-    # create cookie from session id
-    setcookie($session_ID);
-    $name = $_POST["username"];
-    $_SESSION["username"] = $name;
+    session_start()
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +19,7 @@
       }
      ?>
     <a href="/php-cgiform.html">Perl CGI Form</a><br />
-    <a href="php-session-2.php">Session Page 2</a><br />
+    <a href="php-session-1.php">Session Page 1</a><br />
     <button type="submit">Destroy Session</button>
 </body>
 </html>
