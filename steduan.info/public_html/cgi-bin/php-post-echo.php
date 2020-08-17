@@ -8,10 +8,7 @@
 <body>
     <h1>POST Request Echo</h1>
     <?php
-      $query = $_SERVER['QUERY_STRING'];
-      echo "<b>Query string:</b>" . $query;
-    ?>
-    <?php
+      echo "<b>Message body: </b><br>";
       foreach(array_keys($_POST) as $key) {
           echo "<li><b>$key:</b>" . $_POST[$key] . "</li>";
       }

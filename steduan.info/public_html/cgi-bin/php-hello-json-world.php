@@ -4,10 +4,10 @@
 <body>
     <?php
       $ipaddress = getenv("REMOTE_ADDR");
-      $date = date("Y/m/d h:i:sa");
+      $mydate = date("Y-m-d h:i:sa");
       date_default_timezone_set("America/Los_Angeles");
       $myObject->message = "Hello world from PHP!";
-      $myObject->date = "$date";
+      $myObject->date = "$mydate";
       $myObject->IPaddress = "$ipaddress";
 
       $myJSON = json_encode($myObject);
