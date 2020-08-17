@@ -11,7 +11,7 @@
       date_default_timezone_set("America/Los_Angeles");
       echo "{\"message\":\"Hello World from PHP!\",";
       echo "\"date\":\"" . date("Y/m/d h:i:sa") . "\",";
-      echo "\"IPaddress\":\"" . $ipaddress; . "\"}"
+      echo "\"IPaddress\":\"" . $ipaddress . "\"}";
      ?>
     
 </body>
