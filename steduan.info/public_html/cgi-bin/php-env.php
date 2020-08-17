@@ -8,6 +8,7 @@
 <body>
     <h1>Environment Variable </h1>
     <?php
+      phpinfo();
       foreach($_ENV as &$value) {
         echo "hello" . $value . "<br>";
       }
