@@ -20,6 +20,6 @@
     <?php
       echo "<b>name: </b>" . $_SESSION["username"];
      ?>
-    
+    <a href="/php-cgiform.html">Perl CGI Form</a><br />
 </body>
 </html>
