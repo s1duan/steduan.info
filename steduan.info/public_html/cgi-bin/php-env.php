@@ -8,11 +8,13 @@
 <body>
     <h1>Environment Variable </h1>
     <?php
-
+      echo "<ul>";
       foreach(array_keys($_ENV) as &$key) {
-        echo "<b>" . $key . ":</b> ";
-        echo $_ENV[$key] . "<br>";
+        echo "<li>";
+        echo "<b>" . $key . ":</b> " . $_ENV[$key];
+        echo "</li>";
       }
+      echo "</ul>";
      ?>
     
 </body>
