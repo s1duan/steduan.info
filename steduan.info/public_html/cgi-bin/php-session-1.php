@@ -4,7 +4,12 @@
 
     # create cookie from session id
     setcookie($session_ID);
-    $name = $_POST["username"];
+    if ($_SESSION['username']){
+        $name = $_SESSION['username'];
+    }
+    else {
+        $name = $_POST["username"];
+    }
     $_SESSION["username"] = $name;
 ?>
 
