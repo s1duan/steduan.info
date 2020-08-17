@@ -8,8 +8,11 @@
 <body>
     <h1>Sicong Duan was here! </h1>
     <?php
+      $ipaddress = getenv("REMOTE_ADDR");
+      date_default_timezone_set("America/Los_Angeles");
       echo "Hello World" . "<br>";
       echo "This program is generated at " . date("Y/m/d h:i:sa");
+      echo "Your current IP address is: " . $ipaddress;
      ?>
     
 </body>
