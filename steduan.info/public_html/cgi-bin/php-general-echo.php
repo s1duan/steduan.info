@@ -22,14 +22,10 @@
           echo "</ul>";
       }
       echo "<br>";
-      echo "<b>Message body: </b><br>";
+      echo "<b>Message body: </b>";
       
       $content = file_get_contents("php://input");
       echo $content;
-      
-      #foreach(array_keys($_POST) as $key) {
-       #   echo "<li><b>$key:</b>" . $_POST[$key] . "</li>";
-      #}
     ?>
     
 </body>
