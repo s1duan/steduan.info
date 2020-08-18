@@ -4,7 +4,7 @@
 
     # create cookie from session id
     setcookie($session_ID);
-    if ($_SESSION['username'] && !$_POST["username"]){
+    if ($_SESSION['username']){
         $name = $_SESSION['username'];
     }
     else {
