@@ -9,9 +9,9 @@
     <title>Hello PHP World!</title>
 </head>
 <body>
-    <h1>Session 1</h1>
+    <h1>Session 2</h1>
     <?php
-      if(strlen($_SESSION["username"]) > 0){
+      if($_SESSION["username"]){
         echo "<b>name: </b>" . $_SESSION["username"] . "<br>";
       }
       else {
