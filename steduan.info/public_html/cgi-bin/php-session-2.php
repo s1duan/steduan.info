@@ -18,7 +18,7 @@
         echo "You didn't set a user name<br>";
       }
      ?>
-    <a href="/php-cgiform.html">Perl CGI Form</a><br />
+    <a href="/php-cgiform.html">PHP CGI Form</a><br />
     <a href="php-session-1.php">Session Page 1</a><br />
     <form style="margin-top:30px" action="/cgi-bin/php-destroy-session.php" method="get">
         <button type="submit">Destroy Session</button>
