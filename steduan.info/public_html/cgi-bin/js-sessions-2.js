@@ -28,7 +28,7 @@ if (!value) {
 
 console.log('Cache-Control: no-cache');
 
-if (value) console.log(`Set-Cookie:jsusername=${value}`)
+if (value) console.log(`Set-Cookie:username=${value}`)
 console.log("Content-type: text/html\n\n")
 console.log(`<h1>JS Sessions Page 2</h1>`)
 console.log(`Your Username is: ${value}<br>`)
