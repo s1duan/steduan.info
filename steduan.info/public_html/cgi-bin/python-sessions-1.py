@@ -25,21 +25,22 @@ print("<body>")
 print("<h1>Python Sessions Page 1</h1>")
 
 username = -1
-if form.getvalue("username") != None:
-    username = form.getvalue("username")
+#if form.getvalue("username") != None and form.getvalue("username") != '':
+    
+#else:
+if 'HTTP_COOKIE' in os.environ:
+    for cookie in os.environ['HTTP_COOKIE'].split(";"):
+        key = cookie.split("=")[0].strip()
+        value = cookie.split("=")[1]
+        if key == "username":
+            try:
+                f = open("usernameCookies/" + value)
+                username = f.read()
+                f.close()
+            except:
+                pass
 else:
-    if 'HTTP_COOKIE' in os.environ:
-        for cookie in os.environ['HTTP_COOKIE'].split(";"):
-            key = cookie.split("=")[0].strip()
-            value = cookie.split("=")[1]
-            if key == "username":
-                try:
-                    f = open("usernameCookies/" + value)
-                    username = f.read()
-                    f.close()
-                except:
-                    pass
-
+    username = form.getvalue("username")
 
 if (username != -1 and username != ''):
     print("<p><b>Name:</b> {}".format(username))
