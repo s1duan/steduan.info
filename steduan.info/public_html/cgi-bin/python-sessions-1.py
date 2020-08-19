@@ -7,8 +7,19 @@ form = cgi.FieldStorage()
 # generate a random session id
 sessionId = random.getrandbits(128)
 
+new_cookie = True
+
+if 'HTTP_COOKIE' in os.environ:
+    for cookie in os.environ['HTTP_COOKIE'].split(";"):
+        key = cookie.split("=")[0].strip()
+        value = cookie.split("=")[1]
+        if key == "username":
+            if value == '':
+                break
+            new_cookie = False
+
 #Store Data in that Python Session
-if form.getvalue("username") != None and 'HTTP_COOKIE' not in os.environ:
+if form.getvalue("username") != None and new_cookie:
     print("Set-Cookie:username = {};".format(sessionId))
     f = open("usernameCookies/" + str(sessionId), "a")
     f.write(form.getvalue("username"))
