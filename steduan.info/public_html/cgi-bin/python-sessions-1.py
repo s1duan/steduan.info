@@ -25,7 +25,7 @@ print("<body>")
 print("<h1>Python Sessions Page 1</h1>")
 
 username = -1
-if form.getvalue("username") != None and form.getvalue("username") != '':
+if form.getvalue("username") != None:
     username = form.getvalue("username")
 else:
     if 'HTTP_COOKIE' in os.environ:
