@@ -23,13 +23,13 @@ puts "Cache-Control: no-cache"
 puts "Set-Cookie:username=#{QueryName}"
 puts "Content-type: text/html\n\n"
 puts "<!DOCTYPE html>
-<html><head><title>GET Request Echo</title>
-</head><body><h1 align=\"center\">Get Request Echo</h1>
+<html><head><title>Ruby Sessions Page 2</title>
+</head><body><h1 align=\"center\">Ruby Sessions Page 2</h1>
 <hr>"
 
-puts QueryName
+puts QueryName != "" ? QueryName : "You do not have a name set"
 puts "<br>"
-puts "<a href='/cgi-bin/ruby-sessions-2.rb?username=#{QueryName}'>Session1</a>"
+puts "<a href='/cgi-bin/ruby-sessions-1.rb?username=#{QueryName}'>Session1</a>"
 puts "<br>"
 puts "<a href='/ruby-cgi-form.html'>Back to main page</a><br>"
 puts '<form style="margin-top:30px" action="/cgi-bin/ruby-destroy-session.rb" method="get"><button type="submit">Destroy Session</button></form>'

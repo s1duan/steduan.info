@@ -11,7 +11,7 @@ console.log(`<!doctype html>
 <body>
   <h1 align="center">Session Test</h1>
   <hr>
-  <label for="cgi-lang">CGI using Perl</label>
+  <label for="cgi-lang">CGI using JavaScript</label>
   <form action="/cgi-bin/js-sessions-1.js" method="get" id="form">
     <label>What is your name? <input type="text" name="username" autocomplete="off"></label>
     <br>
