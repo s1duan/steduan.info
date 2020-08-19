@@ -35,7 +35,7 @@ console.log('Cache-Control: no-cache');
 if (value) console.log(`Set-Cookie:username=${value}`)
 console.log("Content-type: text/html\n\n")
 console.log(`<h1>JS Sessions Page 1</h1>`)
-console.log(`Your Username is: ${name}<br>`)
+console.log(`Your Username is: ${value}<br>`)
 console.log(`<a href="/cgi-bin/js-sessions-2.js?${key}=${value}">Session Page 2</a><br>`)
 console.log(`<a href="/cgi-bin/js-cgiform.js?">Perl CGI Form</a><br>`)
 console.log(`<form style="margin-top:30px" action="/cgi-bin/js-destroy-session.js" method="get"><button type="submit">Destroy Session</button></form>`)
