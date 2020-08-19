@@ -13,7 +13,7 @@ console.log(`<!doctype html>
   <hr>
   <label for="cgi-lang">CGI using JavaScript</label>
   <form action="/cgi-bin/js-sessions-1.js" method="get" id="form">
-    <label>What is your name? <input type="text" name="username" autocomplete="off"></label>
+    <label>What is your name? <input type="text" name="jsusername" autocomplete="off"></label>
     <br>
     <input type="submit" value="Test Sessioning">
   </form>

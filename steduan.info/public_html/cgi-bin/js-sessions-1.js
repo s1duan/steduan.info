@@ -14,7 +14,7 @@ for (const k in parsed) {
 }
 
 let evar = process.env
-let name = cookie.parse(evar["HTTP_COOKIE"])['username']
+let name = cookie.parse(evar["HTTP_COOKIE"])['jsusername']
 
 // if passed, value is set to a new val
 if (!value) {
