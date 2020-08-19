@@ -1,6 +1,6 @@
 <?php
     header('Cache-Control: no-cache');
-    header('Content-Type: text/html\n\n');
+    header('Content-Type: text/html \n\n');
     session_start();
     session_destroy();
     $_SESSION = [];
