@@ -36,10 +36,8 @@ print("<body>")
 print("<h1>Python Sessions Page 1</h1>")
 
 username = -1
-#if form.getvalue("username") != None and form.getvalue("username") != '':
 if new_cookie:
     username = form.getvalue("username")
-#else:
 if 'HTTP_COOKIE' in os.environ:
     for cookie in os.environ['HTTP_COOKIE'].split(";"):
         key = cookie.split("=")[0].strip()
