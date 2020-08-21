@@ -441,7 +441,7 @@ function reportPerf(measureName, data, customProperties = {}) {
       data,
       eventProperties: customProperties || {},
       navigatorInformation: getNavigatorInfo(),
-      vitalsScore: getVitalsScore(measureName, data),
+      //vitalsScore: getVitalsScore(measureName, data),
     });
     // TODO: send payload to endpoint
     console.log(payload);
